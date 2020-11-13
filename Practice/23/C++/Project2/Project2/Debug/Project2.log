@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\Сергей\Desktop\Programming\Practice\Project2\Project2\aac.h(18,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\Сергей\Desktop\Programming\Practice\Project2\Project2\aad.h(13,9): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+C:\Users\Сергей\Desktop\Programming\Practice\Project2\Project2\Source.cpp(21,27): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Project2.vcxproj -> C:\Users\Сергей\Desktop\Programming\Practice\Project2\Debug\Project2.exe
