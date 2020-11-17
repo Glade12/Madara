@@ -4,12 +4,12 @@
 #include <cmath>
 #include "add.h"
 
-int aac( int k)
+double aac(int k)
 {
 	double x = 0;
 	double sinx = 0;
 	double i = 1;
-	const double PI = 3.141592653589793;
+	const double PI = 3.14;
 	for ( i=1;i<=k;i++)
 	{
 		sinx = sinx + (pow(x, (2 * i + 1)) / (2 * i + 1));
