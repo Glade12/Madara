@@ -4,20 +4,14 @@
 #include <cmath>
 #include "add.h"
 
-double aac(int k)
+double aac(double x)
 {
-	double x = 0;
-	double sinx = 0;
-	double i = 1;
-	const double PI = 3.14;
-	for ( i=1;i<=k;i++)
-	{
-		sinx = sinx + (pow(x, (2 * i + 1)) / (2 * i + 1));
-		x = x + (PI / 180);
+	float c = 0;
+	for (int n = 0; n <= 4; n++) {
+		c = c + pow(-1, n) * pow(x, 2 * n + 1) / add(2 * n + 1);
 	}
-	return sinx;// ак бы не пыталс€ не могу вернуть значени€ типа double
+	return c;
 }
-
 
 
 #endif

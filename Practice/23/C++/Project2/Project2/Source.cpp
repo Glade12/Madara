@@ -18,7 +18,7 @@ int main()
 	double b;
 	for(b=0;b<=(PI/4);b+=(PI/180))
 	{
-		cout << b << "	" << aac(b) << endl;//Не получается вернуть значение типа double
+		cout << b << "	" << aac(b) << endl;
 	}
 	int a;
 	cout << "k" << "	" << "C(k,10)" << "		" << endl;
