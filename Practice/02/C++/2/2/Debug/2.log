@@ -1,4 +1,0 @@
-﻿  Source.cpp
-C:\Users\Сергей\Desktop\Programming\Practice\02\2\2\Source.cpp(7,7): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-C:\Users\Сергей\Desktop\Programming\Practice\02\2\2\Source.cpp(8,7): warning C4244: =: преобразование "double" в "int", возможна потеря данных
-  2.vcxproj -> C:\Users\Сергей\Desktop\Programming\Practice\02\2\Debug\2.exe

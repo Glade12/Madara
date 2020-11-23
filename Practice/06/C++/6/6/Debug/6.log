@@ -1,4 +1,0 @@
-﻿  Source.cpp
-C:\Users\Сергей\Desktop\Programming\Practice\06\6\6\Source.cpp(5,20): warning C4101: x1: неиспользованная локальная переменная
-C:\Users\Сергей\Desktop\Programming\Practice\06\6\6\Source.cpp(5,23): warning C4101: x2: неиспользованная локальная переменная
-  6.vcxproj -> C:\Users\Сергей\Desktop\Programming\Practice\06\6\Debug\6.exe
