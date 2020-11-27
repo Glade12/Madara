@@ -28,14 +28,11 @@ void gen_response1(const Request& req, Response& res){
                     std::string first = "{hourly[i].weather[0].description}";
                     std::string second = "{hourly[i].weather[0].icon}";
                     std::string third = "{hourly[i].temp}";
-                    std::size_t found = text.find(first);
-                    std::size_t found1 = text.find(second);
-                    std::size_t found2 = text.find(third);
-                    text.replace(found, first.size(), weather["hourly"][i]["weather"][0]["description"]);
-                    text.replace(found1, second.size(), weather["hourly"][i]["weather"][0]["icon"]);
-                    text.replace(found2, third.size(), std::to_string(int(round(weather["hourly"][i]["temp"].get<double>()))));
-                    text.replace(found2, third.size(), std::to_string(int(round(weather["hourly"][i]["temp"].get<double>()))));
-                    res.set_content(text, "text/html");
+                    text.replace(text.find(first), first.size(), weather["hourly"][i]["weather"][0]["description"]);
+                    text.replace(text.find(second), second.size(),weather["hourly"][i]["weather"][0]["icon"]);
+                    text.replace(text.find(third), third.size(), std::to_string(int(round(weather["hourly"][i]["temp"].get<double>()))));
+                    text.replace(text.find(third), third.size(), std::to_string(int(round(weather["hourly"][i]["temp"].get<double>()))));
+                    res.set_content(text, "text/html;  charset=UTF-8");
                     break;
                 }
             }
