@@ -178,15 +178,15 @@ void User(T Val) {
 	T first = list[0];
 	T second = list[1];
 	T third = list[2];
-	cout << "Векстор" << endl;
-	print(BozoSort(list, c));
-	print(BozoSort(list, c, false));
+	cout << "Вектор" << endl;
+	print<<(BozoSort(list, c));
+	cout<<(BozoSort(list, c, false));
 	cout << "Вектор в векторе" << endl;
 	print(BozoSort(list2, p));
 	print(BozoSort(list2, p, false));
 	cout << "Числа" << endl;
-	print(BozoSort(first, second, third));
-	print(BozoSort(first, second, third, false));
+	cout<<(BozoSort(first, second, third));
+	cout<<(BozoSort(first, second, third, false));
 }
 
 int main()
