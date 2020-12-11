@@ -180,13 +180,13 @@ void User(T Val) {
 	T third = list[2];
 	cout << "Вектор" << endl;
 	print<<(BozoSort(list, c));
-	cout<<(BozoSort(list, c, false));
+	ptint<<(BozoSort(list, c, false));
 	cout << "Вектор в векторе" << endl;
 	print(BozoSort(list2, p));
 	print(BozoSort(list2, p, false));
 	cout << "Числа" << endl;
-	cout<<(BozoSort(first, second, third));
-	cout<<(BozoSort(first, second, third, false));
+	print<<(BozoSort(first, second, third));
+	print<<(BozoSort(first, second, third, false));
 }
 
 int main()
