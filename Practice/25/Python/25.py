@@ -44,33 +44,36 @@ def BozoSort(list_list, sqrt, k = True):
                 list_list[a][ab], list_list[b][ba] = list_list[b][ba], list_list[a][ab]
                 for i in range (sqrt):
                         for j in range (1,sqrt):
-                                if ((j == 1) and (i>0)):
-                                        if (k):
-                                                if (list_list[i-1][sqrt-1]>list_list[i][j-1]):
-                                                        f = 1
-                                                        i = sqrt
-                                                        break
-                                                        if list_list[i][j-1]>list_list[i][j]:
-                                                                f = 1
-                                                                i = sqrt 
-                                                                break
-                                                elif list_list[i][j-1]>list_list[i][j]:
-                                                        f = 1
-                                                        i = sqrt
-                                                        break
-                                        else:
-                                                if (list_list[i-1][sqrt-1]<list_list[i][j-1]):
-                                                        f = 1
-                                                        i = sqrt
-                                                        break
-                                                        if list_list[i][j-1]<list_list[i][j]:
-                                                                f = 1
-                                                                i = sqrt 
-                                                                break
-                                                elif list_list[i][j-1]<list_list[i][j]:
-                                                        f = 1
-                                                        i = sqrt
-                                                        break
+                        	if(k):
+                        		if(j == 1 and i > 0):
+                        			if list_list[i-1][sqrt - 1] > list_list[i][j - 1]:
+                        				f = 1
+                        				i = sqrt
+                        				break
+                        			else:
+                        				if list_list[i][j - 1] > list_list[i][j]:
+                        					f = 1
+                        					i = sqrt
+                        					break
+                        		elif list_list[i][j - 1] > list_list[i][j]:
+                        			f = 1
+                        			i = sqrt
+                        			break
+                        	else:
+                        		if(j == 1 and i > 0):
+                        			if list_list[i-1][sqrt - 1] < list_list[i][j - 1]:
+                        				f = 1
+                        				i = sqrt
+                        				break
+                        			else:
+                        				if list_list[i][j - 1] < list_list[i][j]:
+                        					f = 1
+                        					i = sqrt
+                        					break
+                        		elif list_list[i][j - 1] < list_list[i][j]:
+                        			f = 1
+                        			i =sqrt
+                        			break                             
         for i in range (sqrt):
                 for j in range (sqrt):
                         print(list_list[i][j], end = " ")
